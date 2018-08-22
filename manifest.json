@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Around the Globe",
+    "description": "Get around the Boston Globe paywall",
+    "version": "1.0.0",
+    "icons": { 
+       "128": "icon_128.png" 
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.bostonglobe.com/*"
+            ],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "permissions": [
+        "tabs", "http://www.google.com/*"
+    ]
+}
