@@ -16,6 +16,9 @@
         }
     ],
     "permissions": [
-        "tabs", "http://www.google.com/*"
-    ]
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
 }
